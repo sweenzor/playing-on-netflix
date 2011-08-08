@@ -1,0 +1,13 @@
+<h1 id="main_title">Playing on Instant?</h1>
+<h2 id="subtitle">Updated Hourly</h1>
+
+<%= paginate @items %>
+<ul class="column_list">
+<% for item in @items do %>
+  <li class="<%= item.delivery_formats.to_s.include?('instant') %>_instant">
+    <span class="status"></span>
+    <%= link_to item.title, "/#{item.slug}" %>
+  </li>
+<% end %>  
+</ul>
+<%= paginate @items %>

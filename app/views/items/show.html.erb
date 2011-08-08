@@ -1,0 +1,7 @@
+<h1>Is <em><%= @item.title %></em> on Netflix instant?</h1>
+
+<% if @item.delivery_formats.to_s.include?('instant') %>
+  <h2>Yes!</h2>
+<% else %>
+  <h2>No :(</h2>
+<% end %>
