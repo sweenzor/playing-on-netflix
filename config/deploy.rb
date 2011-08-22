@@ -102,7 +102,7 @@ namespace :web do
 end
 
 before "deploy:restart", 'web:precompile_assets'
-after "web:precompile_assets", "web:copy_resque_assets"
+# after "web:precompile_assets", "web:copy_resque_assets"
 # after "deploy:symlink", "deploy:restart_workers"
 
 # maintenance page
