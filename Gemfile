@@ -24,3 +24,5 @@ gem 'will_paginate', '~> 3.0.pre4'
 gem "devise", ">= 1.4.2"
 gem "nokogiri"
 gem 'kaminari'
+
+gem 'capistrano'
