@@ -26,6 +26,7 @@ gem "nokogiri"
 gem 'kaminari'
 
 gem 'capistrano'
+gem 'unicorn'
 
 # hacks
 gem 'rack', '1.3.2'
